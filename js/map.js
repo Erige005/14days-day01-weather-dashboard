@@ -11,7 +11,7 @@ const WeatherMap = {
   init() {
     this.map = L.map("weather-map", {
       scrollWheelZoom: false,
-    }).setView([16.0, 106.0], 5); // mặc định: giữa Việt Nam
+    }).setView([22, 100], 4); // mặc định: zoom rộng để thấy tương phản màu nhiệt độ Bắc - Nam Á
 
     // OpenStreetMap chuẩn — miễn phí, không cần API key (khác CARTO, giờ yêu cầu key riêng)
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
